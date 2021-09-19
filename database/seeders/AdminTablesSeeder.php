@@ -24,6 +24,26 @@ class AdminTablesSeeder extends Seeder
             'password' => bcrypt('admin'),
             'name'     => 'Administrator',
         ]);
+        Administrator::create([
+            'username' => 'kuma',
+            'password' => bcrypt('11111'),
+            'name'     => 'kuma',
+        ]);
+        Administrator::create([
+            'username' => 'kumakuma',
+            'password' => bcrypt('123456'),
+            'name'     => 'kumakuma',
+        ]);
+        Administrator::create([
+            'username' => 'test taro',
+            'password' => bcrypt('test_taro'),
+            'name'     => 'test taro',
+        ]);
+        Administrator::create([
+            'username' => 'tanaka taro',
+            'password' => bcrypt('tanaka_taro'),
+            'name'     => 'tanaka taro',
+        ]);
 
         // create a role.
         Role::truncate();
